@@ -32,7 +32,7 @@ const gamemodes = [
 
 export function GamemodeSection() {
     return (
-        <section className="py-16 bg-gray-900">
+        <section className="bg-gray-900">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16 opacity-0 animate-fade-in">
                     <h2 className="text-3xl font-bold text-yellow-400 mb-2">Gamemode Kami</h2>
@@ -48,7 +48,6 @@ export function GamemodeSection() {
                             } items-center opacity-0 animate-fade-in`}
                             style={{ animationDelay: `${index * 200}ms` }}
                         >
-                            {/* Text Content */}
                             <div className="flex-1 space-y-4 w-full">
                                 <div className="inline-flex items-center gap-3 text-xl font-semibold">
                                     <div className="w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center">
@@ -59,7 +58,6 @@ export function GamemodeSection() {
                                 <p className="text-gray-400 max-w-lg">{gamemode.description}</p>
                             </div>
 
-                            {/* Image(s) */}
                             <div className="flex-1 w-full">
                                 <div className="relative aspect-video w-full rounded-xl overflow-hidden">
                                     <Image
@@ -67,6 +65,7 @@ export function GamemodeSection() {
                                         alt={`${gamemode.title} Screenshot`}
                                         fill
                                         className="object-cover"
+                                        draggable={false}
                                     />
                                 </div>
                             </div>

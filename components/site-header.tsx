@@ -7,16 +7,9 @@ import {Home, Trophy, CheckSquare, ShoppingCart, GamepadIcon, Menu, Check} from 
 import { DialogTitle } from "@/components/ui/dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import {toast} from "sonner";
-import {useTransition} from "react";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
-import { useLocale } from "next-intl";
+import Link from "next/link";
 
 export function SiteHeader() {
-    // const [language, setLanguage] = useState("id");
-    const router = useRouter();
-    const pathName = usePathname();
-    const locale = useLocale();
-    const [isPending, startTransition] = useTransition();
 
     const handleCopyIp = () => {
         navigator.clipboard.writeText("play.kaizenmc.id")
@@ -34,24 +27,13 @@ export function SiteHeader() {
             );
     }
 
-    const nextLocale = locale === 'en' ? 'id' : 'en';
-
-    const handleLanguage = () => {
-        startTransition(() => {
-            router.replace(
-                pathName,
-                { locale: nextLocale }
-            )
-        })
-    }
-
 
     return (
         <div className="fixed top-0 left-0 right-0 flex justify-center p-4 z-50 opacity-0 animate-fade-in">
             <header className="flex h-14 w-full max-w-[1200px] items-center justify-between rounded-2xl border border-gray-800 bg-gray-900/80 backdrop-blur-sm px-4">
                 {/* Logo and Brand - Always visible */}
                 <Link href="/" className="flex items-center gap-3">
-                    <Image src="/logo.webp" alt="Kaizen Network" width={190} height={50} className="rounded" />
+                    <Image src="/logo.webp" alt="Kaizen Network" width={190} height={50} className="rounded" draggable={false} />
                 </Link>
 
                 {/* Desktop Navigation - Hidden on mobile */}
@@ -78,7 +60,7 @@ export function SiteHeader() {
                 <div className="flex items-center gap-4">
                     {/* Play Now Button - Hidden on mobile */}
                     <Button
-                        className="hidden md:flex items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded-xl"
+                        className="hidden md:flex font-semibold items-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black rounded-xl"
                         onClick={handleCopyIp}
                     >
                         <GamepadIcon className="h-5 w-5" />
@@ -86,7 +68,7 @@ export function SiteHeader() {
                     </Button>
 
                     {/* Language Selector */}
-                    <button onClick={handleLanguage} disabled={isPending} className="flex items-center gap-2">
+                    {/* <button onClick={handleLanguage} disabled={isPending} className="flex items-center gap-2">
                         <Image
                             src={`https://cdn.jsdelivr.net/gh/lipis/flag-icons/flags/4x3/${locale === 'en' ? "gb" : "id"}.svg`}
                             alt={locale === 'en' ? "English" : "Indonesia"}
@@ -97,7 +79,7 @@ export function SiteHeader() {
                         <span className="text-sm font-medium">
                             {locale === 'en' ? "EN" : "ID"}
                         </span>
-                    </button>
+                    </button> */}
 
                     {/* Mobile Menu Button - Only visible on mobile */}
                     <Sheet>

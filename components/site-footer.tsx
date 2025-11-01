@@ -1,5 +1,5 @@
 import Image from "next/image"
-import {Link} from '@/i18n/navigation';
+import Link from "next/link"
 
 export function SiteFooter() {
     return (
@@ -9,7 +9,7 @@ export function SiteFooter() {
                     {/* Left Column - Logo and Social */}
                     <div className="flex flex-col items-center md:items-start">
                         <div className="flex items-center gap-3 mb-8">
-                            <Image src="/logo.webp" alt="Kaizen Network" width={280} height={80} className="rounded" />
+                            <Image src="/logo.webp" alt="Kaizen Network" width={280} height={80} className="rounded" draggable={false} />
                         </div>
 
                         <div className="flex gap-6">
@@ -67,7 +67,7 @@ export function SiteFooter() {
                 {/* Copyright */}
                 <div className="border-t border-gray-800">
                     <div className="text-center py-6 text-sm text-gray-500">
-                        © 2025 Kaizen Network. Tidak berafiliasi dengan Mojang AB.
+                        © {new Date().getFullYear()} Kaizen Network. Tidak berafiliasi dengan Mojang AB.
                     </div>
                 </div>
             </div>

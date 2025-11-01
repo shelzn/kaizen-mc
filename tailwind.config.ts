@@ -55,8 +55,17 @@ export default {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+  		},
+		keyframes: {
+			bounceSoft: {
+			'0%, 100%': { transform: 'scale(1)' },
+			'50%': { transform: 'scale(1.04)' }, // sebelumnya 1.1 → jadi 1.04 agar halus
+			},
+		},
+		animation: {
+			bounceSoft: 'bounceSoft 0.35s cubic-bezier(0.45, 0, 0.55, 1)',
+		},
+	}
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
