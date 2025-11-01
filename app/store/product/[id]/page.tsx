@@ -208,7 +208,7 @@ export default function PurchasePage({params}: PurchasePageProps) {
                     </div>
                     
                     <Turnstile
-                        siteKey="3x00000000000000000000FF" // NOTE: DEMO ONLY!!
+                        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
                         onSuccess={() => setTurnstileVerified(true)}
                         />
 

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export function SiteFooter() {
     return (
-        <footer className="bg-gray-900">
+        <footer className="relative bg-gray-900">
             <div className="container mx-auto max-w-[1200px] px-4">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 py-16">
                     {/* Left Column - Logo and Social */}

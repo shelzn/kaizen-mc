@@ -21,7 +21,7 @@ export default async function RootLayout({
 
     return (
         <html lang="en">
-        <body className={`${_jakartaPlus.className} bg-gray-900 text-white min-h-screen pt-24 flex flex-col`}>
+        <body className={`${_jakartaPlus.className} relative bg-gray-900 text-white min-h-screen pt-24 flex flex-col`}>
             <SiteHeader />
             <main className="flex-1">{children}</main>
             <Toaster position="bottom-center" />

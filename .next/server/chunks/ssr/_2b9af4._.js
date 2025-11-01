@@ -42,48 +42,48 @@ const gamemodes = [
 ];
 function GamemodeSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-gray-900",
+        className: "relative bg-gray-900 py-12",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-4",
+            className: "container mx-auto px-4 lg:px-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mb-16 opacity-0 animate-fade-in",
+                    className: "text-center mb-12 opacity-0 animate-fade-in",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl font-bold text-yellow-400 mb-2",
                             children: "Gamemode Kami"
                         }, void 0, false, {
                             fileName: "[project]/components/gamemode-section.tsx",
-                            lineNumber: 38,
-                            columnNumber: 21
+                            lineNumber: 35,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text-gray-400",
                             children: "Jelajahi Minecraft dengan cara baru yang luar biasa"
                         }, void 0, false, {
                             fileName: "[project]/components/gamemode-section.tsx",
-                            lineNumber: 39,
-                            columnNumber: 21
+                            lineNumber: 36,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/gamemode-section.tsx",
-                    lineNumber: 37,
-                    columnNumber: 17
+                    lineNumber: 34,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-12 md:space-y-24",
+                    className: "space-y-8 md:space-y-12",
                     children: gamemodes.map((gamemode, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: `flex flex-col gap-8 ${gamemode.imagePosition === "left" ? "md:flex-row-reverse" : "md:flex-row"} items-center opacity-0 animate-fade-in`,
+                            className: `flex flex-col gap-6 ${gamemode.imagePosition === "left" ? "md:flex-row-reverse" : "md:flex-row"} items-center opacity-0 animate-fade-in`,
                             style: {
                                 animationDelay: `${index * 200}ms`
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex-1 space-y-4 w-full",
+                                    className: "flex-1 space-y-3 w-full",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "inline-flex items-center gap-3 text-xl font-semibold",
+                                            className: "inline-flex items-center gap-3 text-lg font-semibold",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                                     className: "w-10 h-10 rounded-lg bg-gray-800 flex items-center justify-center",
@@ -91,34 +91,34 @@ function GamemodeSection() {
                                                         className: "w-5 h-5"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/gamemode-section.tsx",
-                                                        lineNumber: 54,
-                                                        columnNumber: 41
+                                                        lineNumber: 51,
+                                                        columnNumber: 21
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/gamemode-section.tsx",
-                                                    lineNumber: 53,
-                                                    columnNumber: 37
+                                                    lineNumber: 50,
+                                                    columnNumber: 19
                                                 }, this),
                                                 gamemode.title
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/gamemode-section.tsx",
-                                            lineNumber: 52,
-                                            columnNumber: 33
+                                            lineNumber: 49,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-400 max-w-lg",
+                                            className: "text-gray-400 text-sm max-w-lg",
                                             children: gamemode.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/gamemode-section.tsx",
-                                            lineNumber: 58,
-                                            columnNumber: 33
+                                            lineNumber: 55,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/gamemode-section.tsx",
-                                    lineNumber: 51,
-                                    columnNumber: 29
+                                    lineNumber: 48,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex-1 w-full",
@@ -133,40 +133,40 @@ function GamemodeSection() {
                                             loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/components/gamemode-section.tsx",
-                                            lineNumber: 63,
-                                            columnNumber: 37
+                                            lineNumber: 60,
+                                            columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/components/gamemode-section.tsx",
-                                        lineNumber: 62,
-                                        columnNumber: 33
+                                        lineNumber: 59,
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/gamemode-section.tsx",
-                                    lineNumber: 61,
-                                    columnNumber: 29
+                                    lineNumber: 58,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, gamemode.title, true, {
                             fileName: "[project]/components/gamemode-section.tsx",
-                            lineNumber: 44,
-                            columnNumber: 25
+                            lineNumber: 41,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/gamemode-section.tsx",
-                    lineNumber: 42,
-                    columnNumber: 17
+                    lineNumber: 39,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/gamemode-section.tsx",
-            lineNumber: 36,
-            columnNumber: 13
+            lineNumber: 33,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/gamemode-section.tsx",
-        lineNumber: 35,
-        columnNumber: 9
+        lineNumber: 32,
+        columnNumber: 5
     }, this);
 }
 }}),
@@ -269,7 +269,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 function StatsSection() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "grid grid-cols-1 md:grid-cols-3 gap-4",
+        className: "container mx-auto px-4 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-3",
         children: [
             {
                 icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
@@ -277,7 +277,7 @@ function StatsSection() {
                 }, void 0, false, {
                     fileName: "[project]/components/stats-section.tsx",
                     lineNumber: 9,
-                    columnNumber: 27
+                    columnNumber: 17
                 }, this),
                 color: "green",
                 value: "90",
@@ -290,7 +290,7 @@ function StatsSection() {
                 }, void 0, false, {
                     fileName: "[project]/components/stats-section.tsx",
                     lineNumber: 16,
-                    columnNumber: 27
+                    columnNumber: 17
                 }, this),
                 color: "blue",
                 value: "1.20 - 1.21.4",
@@ -303,7 +303,7 @@ function StatsSection() {
                 }, void 0, false, {
                     fileName: "[project]/components/stats-section.tsx",
                     lineNumber: 23,
-                    columnNumber: 27
+                    columnNumber: 17
                 }, this),
                 color: "yellow",
                 value: "76,000+",
@@ -311,57 +311,57 @@ function StatsSection() {
                 delay: "300"
             }
         ].map((stat, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                className: `p-6 bg-gray-800/90 backdrop-blur-sm rounded-xl shadow-xl border border-gray-700 opacity-0 animate-fade-in animation-delay-${stat.delay}`,
+                className: `p-4 bg-gray-800/90 backdrop-blur-sm rounded-xl shadow-xl border border-gray-700 opacity-0 animate-fade-in animation-delay-${stat.delay}`,
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "flex items-center gap-4",
+                    className: "flex items-center gap-3",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "p-3 bg-[#f8cb08]/10 rounded-xl text-[#f8cb08]",
+                            className: "p-2 bg-[#f8cb08]/10 rounded-xl text-[#f8cb08]",
                             children: stat.icon
                         }, void 0, false, {
                             fileName: "[project]/components/stats-section.tsx",
-                            lineNumber: 33,
-                            columnNumber: 25
+                            lineNumber: 35,
+                            columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-2xl font-bold",
+                                    className: "text-xl font-bold",
                                     children: stat.value
                                 }, void 0, false, {
                                     fileName: "[project]/components/stats-section.tsx",
-                                    lineNumber: 38,
-                                    columnNumber: 29
+                                    lineNumber: 37,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "text-sm text-gray-400",
+                                    className: "text-xs text-gray-400",
                                     children: stat.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/stats-section.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 29
+                                    lineNumber: 38,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/stats-section.tsx",
-                            lineNumber: 37,
-                            columnNumber: 25
+                            lineNumber: 36,
+                            columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/stats-section.tsx",
-                    lineNumber: 32,
-                    columnNumber: 21
+                    lineNumber: 34,
+                    columnNumber: 11
                 }, this)
             }, index, false, {
                 fileName: "[project]/components/stats-section.tsx",
                 lineNumber: 30,
-                columnNumber: 17
+                columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/components/stats-section.tsx",
         lineNumber: 6,
-        columnNumber: 9
+        columnNumber: 5
     }, this);
 }
 }}),
@@ -398,7 +398,7 @@ function AboutSection() {
                 children: "..."
             }, void 0, false, {
                 fileName: "[project]/components/about-section.tsx",
-                lineNumber: 26,
+                lineNumber: 19,
                 columnNumber: 7
             }, this)
         ]
@@ -409,7 +409,7 @@ function AboutSection() {
                 className: "w-8 h-8 text-yellow-400"
             }, void 0, false, {
                 fileName: "[project]/components/about-section.tsx",
-                lineNumber: 31,
+                lineNumber: 24,
                 columnNumber: 13
             }, this),
             title: "Komunitas Ramah"
@@ -419,7 +419,7 @@ function AboutSection() {
                 className: "w-8 h-8 text-yellow-400"
             }, void 0, false, {
                 fileName: "[project]/components/about-section.tsx",
-                lineNumber: 32,
+                lineNumber: 25,
                 columnNumber: 13
             }, this),
             title: "Dilindungi Anti-Cheat"
@@ -429,7 +429,7 @@ function AboutSection() {
                 className: "w-8 h-8 text-yellow-400"
             }, void 0, false, {
                 fileName: "[project]/components/about-section.tsx",
-                lineNumber: 33,
+                lineNumber: 26,
                 columnNumber: 13
             }, this),
             title: "Versi Terbaru"
@@ -439,34 +439,34 @@ function AboutSection() {
                 className: "w-8 h-8 text-yellow-400"
             }, void 0, false, {
                 fileName: "[project]/components/about-section.tsx",
-                lineNumber: 34,
+                lineNumber: 27,
                 columnNumber: 13
             }, this),
             title: "Pengalaman Bebas Lag"
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "relative py-24 text-white overflow-hidden",
+        className: "relative py-12 mx-auto bg-gray-900 text-white overflow-hidden",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center",
+            className: "container mx-auto px-4 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "space-y-6",
+                    className: "space-y-4",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-400",
                             children: "Tentang Kaizen Network"
                         }, void 0, false, {
                             fileName: "[project]/components/about-section.tsx",
-                            lineNumber: 42,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-gray-300 text-lg leading-relaxed max-w-lg transition-all duration-300",
+                            className: "text-gray-300 text-base leading-relaxed max-w-lg transition-all duration-300",
                             children: displayedText
                         }, void 0, false, {
                             fileName: "[project]/components/about-section.tsx",
-                            lineNumber: 46,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -479,7 +479,7 @@ function AboutSection() {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/about-section.tsx",
-                                        lineNumber: 56,
+                                        lineNumber: 47,
                                         columnNumber: 36
                                     }, this)
                                 ]
@@ -490,66 +490,66 @@ function AboutSection() {
                                         className: "w-4 h-4"
                                     }, void 0, false, {
                                         fileName: "[project]/components/about-section.tsx",
-                                        lineNumber: 60,
+                                        lineNumber: 51,
                                         columnNumber: 35
                                     }, this)
                                 ]
                             }, void 0, true)
                         }, void 0, false, {
                             fileName: "[project]/components/about-section.tsx",
-                            lineNumber: 50,
+                            lineNumber: 41,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/about-section.tsx",
-                    lineNumber: 41,
+                    lineNumber: 34,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-4",
+                    className: "grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-2 gap-3",
                     children: features.map((feature, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "flex flex-col items-center justify-center p-6 rounded-2xl border border-gray-800   transition-all duration-500 ease-out   hover:scale-105 active:scale-95   hover:border-yellow-400/40   hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]   cursor-pointer select-none   bg-gradient-to-tr from-gray-900 to-gray-800   hover:from-gray-900 hover:to-white/15",
+                            className: "flex flex-col items-center justify-center p-4 rounded-2xl border border-gray-800   transition-all duration-500 ease-out   hover:scale-105 active:scale-95   hover:border-yellow-400/40   hover:shadow-[0_0_25px_rgba(250,204,21,0.25)]   cursor-pointer select-none   bg-gradient-to-tr from-gray-900 to-gray-800   hover:from-gray-900 hover:to-white/15",
                             style: {
-                                transitionTimingFunction: 'cubic-bezier(0.34, 1.56, 0.64, 1)'
+                                transitionTimingFunction: "cubic-bezier(0.34, 1.56, 0.64, 1)"
                             },
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "p-3 bg-[#f8cb08]/10 rounded-xl text-[#f8cb08] mb-4",
+                                    className: "p-2 bg-[#f8cb08]/10 rounded-xl text-[#f8cb08] mb-2",
                                     children: feature.icon
                                 }, void 0, false, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 83,
-                                    columnNumber: 21
+                                    lineNumber: 74,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "font-medium text-sm text-gray-300",
+                                    className: "font-medium text-xs text-gray-300 text-center",
                                     children: feature.title
                                 }, void 0, false, {
                                     fileName: "[project]/components/about-section.tsx",
-                                    lineNumber: 86,
-                                    columnNumber: 21
+                                    lineNumber: 75,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, i, true, {
                             fileName: "[project]/components/about-section.tsx",
-                            lineNumber: 69,
-                            columnNumber: 17
+                            lineNumber: 60,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/about-section.tsx",
-                    lineNumber: 67,
+                    lineNumber: 58,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/about-section.tsx",
-            lineNumber: 39,
+            lineNumber: 32,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/about-section.tsx",
-        lineNumber: 38,
+        lineNumber: 31,
         columnNumber: 5
     }, this);
 }
@@ -595,43 +595,42 @@ function SocialSection() {
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "w-full bg-gray-900 py-20",
-        id: "social",
+        className: "relative w-full bg-gray-900 py-12",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "container mx-auto px-4",
+            className: "container mx-auto px-4 lg:px-8",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "text-center mb-12",
+                    className: "text-center mb-10",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "text-4xl font-bold text-white mb-4",
+                            className: "text-4xl font-bold text-white mb-3",
                             children: "Gabung dengan Komunitas Kami"
                         }, void 0, false, {
                             fileName: "[project]/components/social-section.tsx",
-                            lineNumber: 37,
-                            columnNumber: 21
+                            lineNumber: 34,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-gray-400 text-lg max-w-3xl mx-auto",
+                            className: "text-gray-400 text-base max-w-3xl mx-auto",
                             children: "Tetap terhubung dengan kami di media sosial untuk pembaruan terbaru, acara, dan lainnya."
                         }, void 0, false, {
                             fileName: "[project]/components/social-section.tsx",
-                            lineNumber: 38,
-                            columnNumber: 21
+                            lineNumber: 35,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/social-section.tsx",
-                    lineNumber: 36,
-                    columnNumber: 17
+                    lineNumber: 33,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "grid grid-cols-1 lg:grid-cols-3 gap-8",
+                    className: "grid grid-cols-1 lg:grid-cols-3 gap-6",
                     children: items.map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Card"], {
-                            className: "bg-gray-800/80 backdrop-blur-sm border border-gray-600/50 rounded-2xl p-8 flex flex-col hover:bg-gray-800/90 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#BA8FEE]/10",
+                            className: "bg-gray-800/80 backdrop-blur-sm border border-gray-600/50 rounded-2xl p-6 flex flex-col hover:bg-gray-800/90 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-[#BA8FEE]/10",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardHeader"], {
-                                    className: "p-0 mb-6",
+                                    className: "p-0 mb-4",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "flex items-center space-x-4",
                                         children: [
@@ -647,89 +646,90 @@ function SocialSection() {
                                                     loading: "lazy"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/social-section.tsx",
-                                                    lineNumber: 51,
-                                                    columnNumber: 41
+                                                    lineNumber: 48,
+                                                    columnNumber: 21
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/components/social-section.tsx",
-                                                lineNumber: 50,
-                                                columnNumber: 37
+                                                lineNumber: 47,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
-                                                className: "text-white text-2xl font-bold",
+                                                className: "text-white text-xl font-bold",
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/social-section.tsx",
-                                                lineNumber: 61,
-                                                columnNumber: 37
+                                                lineNumber: 58,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/social-section.tsx",
-                                        lineNumber: 49,
-                                        columnNumber: 33
+                                        lineNumber: 46,
+                                        columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/social-section.tsx",
-                                    lineNumber: 48,
-                                    columnNumber: 29
+                                    lineNumber: 45,
+                                    columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
                                     className: "p-0 flex flex-col flex-grow",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-gray-300 mb-8 text-base leading-relaxed flex-grow",
+                                            className: "text-gray-300 mb-6 text-sm leading-relaxed flex-grow",
                                             children: item.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/social-section.tsx",
-                                            lineNumber: 66,
-                                            columnNumber: 33
+                                            lineNumber: 62,
+                                            columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                             asChild: true,
-                                            className: "bg-yellow-400 text-black hover:bg-yellow-500 font-semibold py-3 px-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 w-full",
+                                            className: "bg-yellow-400 text-black hover:bg-yellow-500 font-semibold py-2 px-6 rounded-xl transition-all duration-300 hover:shadow-lg hover:shadow-yellow-400/20 w-full text-sm",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                                 href: item.link,
                                                 className: "text-center",
                                                 target: "_blank",
+                                                rel: "noreferrer",
                                                 children: item.buttonText
                                             }, void 0, false, {
                                                 fileName: "[project]/components/social-section.tsx",
-                                                lineNumber: 71,
-                                                columnNumber: 37
+                                                lineNumber: 67,
+                                                columnNumber: 19
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/social-section.tsx",
-                                            lineNumber: 67,
-                                            columnNumber: 33
+                                            lineNumber: 63,
+                                            columnNumber: 17
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/social-section.tsx",
-                                    lineNumber: 65,
-                                    columnNumber: 29
+                                    lineNumber: 61,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, idx, true, {
                             fileName: "[project]/components/social-section.tsx",
-                            lineNumber: 44,
-                            columnNumber: 25
+                            lineNumber: 41,
+                            columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/social-section.tsx",
-                    lineNumber: 42,
-                    columnNumber: 17
+                    lineNumber: 39,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/social-section.tsx",
-            lineNumber: 35,
-            columnNumber: 13
+            lineNumber: 32,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/social-section.tsx",
-        lineNumber: 34,
-        columnNumber: 9
+        lineNumber: 31,
+        columnNumber: 5
     }, this);
 }
 }}),
@@ -747,6 +747,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$imag
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/sonner/dist/index.mjs [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/check.js [app-ssr] (ecmascript) <export default as Check>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gamepad$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gamepad2$3e$__ = __turbopack_import__("[project]/node_modules/lucide-react/dist/esm/icons/gamepad-2.js [app-ssr] (ecmascript) <export default as Gamepad2>");
+"use client";
 ;
 ;
 ;
@@ -757,20 +758,19 @@ function HeroSection() {
         navigator.clipboard.writeText("play.kaizenmc.id").then(()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$sonner$2f$dist$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["toast"])(/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "flex items-center justify-center gap-2",
                 children: [
-                    " ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
                             className: "w-4 h-4 text-black"
                         }, void 0, false, {
                             fileName: "[project]/components/hero-section.tsx",
-                            lineNumber: 13,
-                            columnNumber: 29
+                            lineNumber: 14,
+                            columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 12,
-                        columnNumber: 25
+                        lineNumber: 13,
+                        columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                         className: "font-bold text-center",
@@ -781,140 +781,162 @@ function HeroSection() {
                                 children: "disalin ke clipboard!"
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 16,
-                                columnNumber: 46
+                                lineNumber: 17,
+                                columnNumber: 30
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 15,
-                        columnNumber: 25
+                        lineNumber: 16,
+                        columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 11,
-                columnNumber: 21
+                lineNumber: 12,
+                columnNumber: 9
             }, this)));
     };
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "text-center space-y-6 opacity-0 animate-fade-in",
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                className: "text-5xl md:text-7xl font-bold",
-                children: [
-                    "Selamat Datang di",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "block mt-2 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 text-transparent bg-clip-text animate-gradient",
-                        children: "Kaizen Network"
-                    }, void 0, false, {
-                        fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 27,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 25,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                className: "text-gray-400 text-xl md:text-2xl",
-                children: "Tempat semua orang mendapatkan inspirasi mereka."
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "fixed inset-0 bg-cover bg-center bg-no-repeat z-0",
+                style: {
+                    backgroundImage: "url('/hero.webp')"
+                },
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 bg-black/60 z-0"
+                }, void 0, false, {
+                    fileName: "[project]/components/hero-section.tsx",
+                    lineNumber: 30,
+                    columnNumber: 9
+                }, this)
             }, void 0, false, {
                 fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 32,
-                columnNumber: 13
+                lineNumber: 26,
+                columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800/70 border border-gray-700 text-sm",
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "text-center space-y-3 md:space-y-4 opacity-0 animate-fade-in px-4 md:px-0",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "w-2.5 h-2.5 rounded-full mr-2 bg-green-500",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            className: "w-2 h-2 rounded-full bg-green-500"
-                        }, void 0, false, {
-                            fileName: "[project]/components/hero-section.tsx",
-                            lineNumber: 36,
-                            columnNumber: 21
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 35,
-                        columnNumber: 17
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                        className: "text-sm font-medium text-gray-300",
-                        children: "Server online · 117 Players · play.kaizenmc.id"
-                    }, void 0, false, {
-                        fileName: "[project]/components/hero-section.tsx",
-                        lineNumber: 38,
-                        columnNumber: 17
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 34,
-                columnNumber: 13
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex flex-wrap justify-center gap-4",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                        size: "xl",
-                        className: "px-8 py-3 rounded-xl text-lg font-semibold transition-colors w-full sm:w-auto flex items-center justify-center text-center bg-[#f8cb08] text-black group relative duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_0_0_rgba(248,203,8,0)] hover:shadow-[0_8px_16px_rgba(248,203,8,0.15)] hover:bg-yellow-400/90 hover:animate-bounceSoft",
-                        onClick: handleCopyIp,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-4xl md:text-7xl font-bold leading-tight",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gamepad$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gamepad2$3e$__["Gamepad2"], {
-                                size: 100
+                            "Selamat Datang di",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "block mt-1 md:mt-2 bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 text-transparent bg-clip-text animate-gradient",
+                                children: "Kaizen Network"
                             }, void 0, false, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 47,
-                                columnNumber: 21
+                                lineNumber: 35,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/hero-section.tsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-gray-400 text-sm md:text-xl",
+                        children: "Tempat semua orang mendapatkan inspirasi mereka."
+                    }, void 0, false, {
+                        fileName: "[project]/components/hero-section.tsx",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "inline-flex items-center gap-2 px-3 md:px-4 py-2 rounded-full bg-gray-800/70 border border-gray-700 text-xs md:text-sm",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "w-2.5 h-2.5 rounded-full mr-2 bg-green-500",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "w-2 h-2 rounded-full bg-green-500"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/hero-section.tsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/hero-section.tsx",
+                                lineNumber: 43,
+                                columnNumber: 11
                             }, this),
-                            "Main Sekarang"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-xs md:text-sm font-medium text-gray-300",
+                                children: "Server online · 117 Players · play.kaizenmc.id"
+                            }, void 0, false, {
+                                fileName: "[project]/components/hero-section.tsx",
+                                lineNumber: 46,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-section.tsx",
                         lineNumber: 42,
-                        columnNumber: 17
+                        columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
-                        size: "xl",
-                        variant: "outline",
-                        className: "rounded-xl w-full sm:w-auto flex items-center justify-center text-center border-gray-500 hover:border-white group relative px-8 py-3 text-lg font-semibold border shadow-[0_0_0_rgba(255,255,255,0)] transition-[background,border-color,box-shadow,transform] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.08)] hover:border-white/20 hover:bg-white/[0.03] hover:animate-bounceSoft active:scale-95",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col md:flex-row flex-wrap justify-center gap-3 md:gap-4 pt-2",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                src: "/discord.svg",
-                                alt: "Discord",
-                                className: "w-6 h-6 mr-2 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-110",
-                                width: 9,
-                                height: 9,
-                                draggable: false
-                            }, void 0, false, {
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                size: "xl",
+                                className: "w-full md:w-auto px-6 md:px-8 py-3 rounded-xl text-base md:text-lg font-semibold transition-colors flex items-center justify-center text-center bg-[#f8cb08] text-black group relative duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] shadow-[0_0_0_rgba(248,203,8,0)] hover:shadow-[0_8px_16px_rgba(248,203,8,0.15)] hover:bg-yellow-400/90 hover:animate-bounceSoft",
+                                onClick: handleCopyIp,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$gamepad$2d$2$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Gamepad2$3e$__["Gamepad2"], {
+                                        size: 20,
+                                        className: "mr-2"
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/hero-section.tsx",
+                                        lineNumber: 57,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Main Sekarang"
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/components/hero-section.tsx",
-                                lineNumber: 56,
-                                columnNumber: 21
+                                lineNumber: 52,
+                                columnNumber: 11
                             }, this),
-                            "Gabung Discord"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
+                                size: "xl",
+                                variant: "outline",
+                                className: "w-full md:w-auto rounded-xl flex items-center justify-center text-center border-gray-500 hover:border-white group relative px-6 md:px-8 py-3 text-base md:text-lg font-semibold border shadow-[0_0_0_rgba(255,255,255,0)] transition-[background,border-color,box-shadow,transform] duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] hover:shadow-[0_8px_16px_rgba(255,255,255,0.08)] hover:border-white/20 hover:bg-white/[0.03] hover:animate-bounceSoft active:scale-95 bg-transparent",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/discord.svg",
+                                        alt: "Discord",
+                                        className: "w-5 h-5 md:w-6 md:h-6 mr-2 transition-transform duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] group-hover:scale-110",
+                                        width: 9,
+                                        height: 9,
+                                        draggable: false
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/hero-section.tsx",
+                                        lineNumber: 66,
+                                        columnNumber: 13
+                                    }, this),
+                                    "Gabung Discord"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/hero-section.tsx",
+                                lineNumber: 61,
+                                columnNumber: 11
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/hero-section.tsx",
                         lineNumber: 51,
-                        columnNumber: 17
+                        columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/hero-section.tsx",
-                lineNumber: 41,
-                columnNumber: 13
+                lineNumber: 32,
+                columnNumber: 7
             }, this)
         ]
-    }, void 0, true, {
-        fileName: "[project]/components/hero-section.tsx",
-        lineNumber: 24,
-        columnNumber: 9
-    }, this);
+    }, void 0, true);
 }
 }}),
 "[project]/app/page.tsx [app-ssr] (ecmascript)": ((__turbopack_context__) => {
@@ -940,38 +962,45 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$hero$2d$sectio
 ;
 function Home() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "container mx-auto px-4 py-8 space-y-12",
+        className: "w-full space-y-0 mt-10 lg:mt-20",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$hero$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 15,
-                columnNumber: 13
+                lineNumber: 13,
+                columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$stats$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "py-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$stats$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "[project]/app/page.tsx",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "[project]/app/page.tsx",
-                lineNumber: 18,
-                columnNumber: 13
+                lineNumber: 16,
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$about$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AboutSection"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 21,
-                columnNumber: 13
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$gamemode$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["GamemodeSection"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 24,
-                columnNumber: 13
+                columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$social$2d$section$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/page.tsx",
                 lineNumber: 27,
-                columnNumber: 13
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/page.tsx",
-        lineNumber: 13,
-        columnNumber: 9
+        lineNumber: 11,
+        columnNumber: 5
     }, this);
 }
 }}),
