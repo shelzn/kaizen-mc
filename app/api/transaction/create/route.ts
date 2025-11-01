@@ -53,19 +53,19 @@ export async function POST(request: NextRequest) {
         const result = await response.json();
         console.log(result)
 
-        await prisma.transaction.create({
-            data: {
-                reference: result.data.reference,
-                merchant_ref: result.data.merchant_ref,
-                nickname: result.data.customer_name,
-                amount: result.data.amount,
-                method: result.data.payment_method,
-                qr_url: result.data.qr_url,
-                pay_code: result.data.pay_code,
-                status: result.data.status,
-                expired_time: result.data.expired_time,
-            }
-        })
+        // await prisma.transaction.create({
+        //     data: {
+        //         reference: result.data.reference,
+        //         merchant_ref: result.data.merchant_ref,
+        //         nickname: result.data.customer_name,
+        //         amount: result.data.amount,
+        //         method: result.data.payment_method,
+        //         qr_url: result.data.qr_url,
+        //         pay_code: result.data.pay_code,
+        //         status: result.data.status,
+        //         expired_time: result.data.expired_time,
+        //     }
+        // })
 
         return NextResponse.json({
             status: 200,

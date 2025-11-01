@@ -2,13 +2,14 @@
 
 import Image from "next/image"
 import {Check, ChevronLeft, Copy, Loader2} from "lucide-react"
-import React, { useEffect, useState } from "react"
+import React, {useEffect, useState} from "react"
 import parse from "html-react-parser"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card"
 import {findPayment, formatCurrency} from "@/lib/utils";
 import {Label} from "@/components/ui/label";
 import {Button} from "@/components/ui/button";
 import Link from "next/link"
+import { toast } from "sonner"
 
 interface PaymentPageProps {
     params: Promise<{ reference: string }>
@@ -31,7 +32,7 @@ interface ResponseProps {
     instructions: InstructionProps[]
 }
 
-export default function PaymentPage({ params }: PaymentPageProps) {
+export default function PaymentPage({params}: PaymentPageProps) {
     const [isLoading, setLoading] = useState<boolean>(true)
     const [response, setResponse] = useState<ResponseProps>({
         reference: "",
@@ -58,7 +59,7 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                     headers: {
                         "Content-Type": "application/json",
                     },
-                    body: JSON.stringify({ id: reference }),
+                    body: JSON.stringify({id: reference}),
                 });
 
                 const result = await response.json();
@@ -99,14 +100,32 @@ export default function PaymentPage({ params }: PaymentPageProps) {
     const copyToClipboard = (code?: string | null) => {
         if (typeof code === "string") {
             navigator.clipboard.writeText(code)
-                .then(() => setCopied(true))
+                .then(() => {
+                    setCopied(true)
+                    toast(
+                        <div className="flex items-center justify-center gap-2">
+                            <div className="w-5 h-5 rounded-full bg-yellow-400 flex items-center justify-center">
+                                <Check className="w-4 h-4 text-black" />
+                            </div>
+                            <p className="text-center text-white">
+                                Kode pembayaran disalin!
+                            </p>
+                        </div>,
+                        {
+                            style: {
+                                backgroundColor: "#1f2937",
+                                border: "none"
+                            }
+                        }
+                    )
+                });
         }
     }
 
     if (isLoading) {
         return (
             <div className="flex items-center justify-center min-h-screen bg-gray-900">
-                <Loader2 className="w-8 h-8 animate-spin text-yellow-400" />
+                <Loader2 className="w-8 h-8 animate-spin text-yellow-400"/>
                 <p className="text-center text-sm text-yellow-500 ml-2">Memuat...</p>
             </div>
         )
@@ -119,7 +138,7 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                 <div className="container max-w-2xl mx-auto px-4">
                     <div className="h-14 flex items-center justify-between gap-4">
                         <Link href="/store" className="flex items-center gap-2 text-gray-400 hover:text-white">
-                            <ChevronLeft className="w-5 h-5" />
+                            <ChevronLeft className="w-5 h-5"/>
                             <span>Kembali ke Toko</span>
                         </Link>
                     </div>
@@ -130,7 +149,7 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                 {/* Success Message */}
                 <div className="text-center space-y-4">
                     <div className="w-16 h-16 rounded-full bg-green-500/20 flex items-center justify-center mx-auto">
-                        <Check className="w-8 h-8 text-green-500" />
+                        <Check className="w-8 h-8 text-green-500"/>
                     </div>
                     <h1 className="text-2xl font-bold">Pembayaran Berhasil!</h1>
                     <p className="text-gray-400">Premium Points akan segera ditambahkan ke akun Anda</p>
@@ -177,17 +196,20 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                         <h2 className="font-semibold mb-4">Langkah Selanjutnya</h2>
                         <div className="space-y-4">
                             <div className="flex gap-4 items-start">
-                                <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
+                                <div
+                                    className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
                                     <span className="font-semibold">1</span>
                                 </div>
                                 <div className="space-y-1">
                                     <p className="font-medium">Masuk ke Server Minecraft</p>
-                                    <p className="text-sm text-gray-400">Gunakan IP: <span className="font-bold">play.kaizennetwork.net</span> untuk masuk ke server</p>
+                                    <p className="text-sm text-gray-400">Gunakan IP: <span
+                                        className="font-bold">play.kaizennetwork.net</span> untuk masuk ke server</p>
                                 </div>
                             </div>
 
                             <div className="flex gap-4 items-start">
-                                <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
+                                <div
+                                    className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
                                     <span className="font-semibold">2</span>
                                 </div>
                                 <div className="space-y-1">
@@ -199,13 +221,15 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                             </div>
 
                             <div className="flex gap-4 items-start">
-                                <div className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
+                                <div
+                                    className="w-8 h-8 rounded-lg bg-gray-800 flex items-center justify-center flex-shrink-0">
                                     <span className="font-semibold">3</span>
                                 </div>
                                 <div className="space-y-1">
                                     <p className="font-medium">Claim Role Donatur</p>
                                     <p className="text-sm text-gray-400">
-                                        Gunakan command <span className="font-bold">/discord link</span> di server minecraft untuk mendapatkan role Donatur di Discord
+                                        Gunakan command <span className="font-bold">/discord link</span> di server
+                                        minecraft untuk mendapatkan role Donatur di Discord
                                     </p>
                                 </div>
                             </div>
@@ -231,7 +255,7 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                 <div className="container max-w-2xl mx-auto px-4">
                     <div className="h-14 flex items-center justify-between gap-4">
                         <Link href="/store" className="flex items-center gap-2 text-gray-400 hover:text-white">
-                            <ChevronLeft className="w-5 h-5" />
+                            <ChevronLeft className="w-5 h-5"/>
                             <span>Kembali ke Toko</span>
                         </Link>
                     </div>
@@ -245,7 +269,8 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                         <CardTitle>Status Pembayaran</CardTitle>
                         {
                             response.status === "UNPAID" ? (
-                                <span className="px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded-full text-sm font-medium">
+                                <span
+                                    className="px-3 py-1 bg-yellow-500/20 text-yellow-500 rounded-full text-sm font-medium">
                                     Belum Dibayar
                                 </span>
                             ) : response.status === "EXPIRED" ? (
@@ -253,7 +278,8 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                                     Kadaluarsa
                                 </span>
                             ) : response.status === "PAID" ? (
-                                <span className="px-3 py-1 bg-green-500/20 text-green-500 rounded-full text-sm font-medium">
+                                <span
+                                    className="px-3 py-1 bg-green-500/20 text-green-500 rounded-full text-sm font-medium">
                                     Dibayar
                                 </span>
                             ) : null
@@ -261,9 +287,10 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                     </CardHeader>
                     <CardContent className="space-y-2 text-sm">
                         <div className="flex justify-between">
-                            <span className="text-gray-400">Referensi</span>
-                            <span>{search.reference}</span>
+                            <span className="text-gray-400">Username</span>
+                            <span>{response.customer_name}</span>
                         </div>
+
                         <div className="flex justify-between">
                             <span className="text-gray-400">Jumlah</span>
                             <span>Rp{formatCurrency(response.amount)}</span>
@@ -275,7 +302,8 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                         {response.status !== "PAID" && (
                             <div className="flex justify-between items-center">
                                 <span className="text-gray-400">Sisa Waktu</span>
-                                <div className={`flex items-center gap-1 ${typeof timeLeft === "number" ? "text-white" : "text-red-500"}`}>
+                                <div
+                                    className={`flex items-center gap-1 ${typeof timeLeft === "number" ? "text-white" : "text-red-500"}`}>
                                     <span>
                                         {typeof timeLeft === "number"
                                             ? `${String(Math.floor(timeLeft / 3600)).padStart(2, "0")}:${String(
@@ -286,6 +314,10 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                                 </div>
                             </div>
                         )}
+                        <div className="flex justify-between">
+                            <span className="text-gray-400">Referensi</span>
+                            <span className="font-mono text-gray-300">{search.reference}</span>
+                        </div>
                     </CardContent>
                 </Card>
 
@@ -297,17 +329,24 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                     <CardContent className="space-y-6">
                         <div className="flex justify-center">
                             {response.payment_method === "QRISC" ? (
-                                <div className="bg-white p-4 rounded-xl">
+                                <div className="flex flex-col items-center justify-center p-6 rounded-2xl">
                                     {response.qr_url ? (
-                                        <Image
-                                            src={response.qr_url}
-                                            alt="QRIS QR Code"
-                                            width={200}
-                                            height={200}
-                                            className="w-48 h-48"
-                                            draggable={false}
-                                        />
-
+                                        <>
+                                            <div className="bg-white p-3 rounded-xl shadow-lg">
+                                                <Image
+                                                    src={response.qr_url}
+                                                    alt="QRIS QR Code"
+                                                    width={288}
+                                                    height={288}
+                                                    className="h-[288px] w-[288px] object-contain rounded-lg"
+                                                    draggable={false}
+                                                    loading="lazy"
+                                                />
+                                            </div>
+                                            <p className="mt-3 text-center text-sm font-medium text-black bg-white px-4 py-2 rounded-xl">
+                                                Pindai kode QR ini dengan aplikasi e-wallet Anda
+                                            </p>
+                                        </>
                                     ) : (
                                         <p className="text-red-500">QR Code tidak tersedia</p>
                                     )}
@@ -316,23 +355,24 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                                 <div className="space-y-2">
                                     <Label>Kode Pembayaran</Label>
                                     <div className="flex items-center gap-2">
-                                        <div className="flex-1 bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 font-mono">
+                                        <div
+                                            className="flex-1 bg-gray-800/50 border md:w-[500] w-[300] border-gray-700 rounded-l-xl px-4 py-3 font-mono">
                                             {response.pay_code}
                                         </div>
                                         <Button
                                             variant="outline"
                                             size="icon"
-                                            className="h-12 w-24 bg-yellow-400 hover:bg-yellow-500 text-black border-0"
+                                            className="h-12 w-24 bg-yellow-400 hover:bg-yellow-500 text-black border-0 rounded-r-xl"
                                             onClick={() => copyToClipboard(response.pay_code)}
                                         >
                                             {copied ? (
                                                 <>
-                                                    <Check className="h-4 w-4 mr-2" />
+                                                    <Check className="h-4 w-4 mr-2"/>
                                                     <span className="text-sm">Salin</span>
                                                 </>
                                             ) : (
                                                 <>
-                                                    <Copy className="h-4 w-4 mr-2" />
+                                                    <Copy className="h-4 w-4 mr-2"/>
                                                     <span className="text-sm">Salin</span>
                                                 </>
                                             )}
@@ -341,11 +381,6 @@ export default function PaymentPage({ params }: PaymentPageProps) {
                                 </div>
                             )}
                         </div>
-
-                        {response.payment_method === "QRISC" && (
-                            <p className="text-center text-sm text-gray-400">Pindai kode QR ini menggunakan aplikasi e-wallet Anda</p>
-                        )}
-
 
                         <div className="space-y-6">
                             {response.instructions.map((instruction, index) => (

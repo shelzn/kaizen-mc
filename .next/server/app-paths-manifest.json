@@ -1,6 +1,10 @@
 {
-  "/page": "app/page.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js",
   "/store/page": "app/store/page.js",
-  "/store/product/[id]/page": "app/store/product/[id]/page.js"
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/store/product/[id]/page": "app/store/product/[id]/page.js",
+  "/api/transaction/create/route": "app/api/transaction/create/route.js",
+  "/store/checkout/[reference]/page": "app/store/checkout/[reference]/page.js",
+  "/api/transaction/status/route": "app/api/transaction/status/route.js",
+  "/page": "app/page.js",
+  "/vote/page": "app/vote/page.js"
 }

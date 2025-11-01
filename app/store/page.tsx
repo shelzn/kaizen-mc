@@ -33,6 +33,7 @@ export default function Store() {
                     alt={`${point.amount} Premium Points`}
                     fill
                     className="object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>

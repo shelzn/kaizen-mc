@@ -23,14 +23,14 @@ export async function POST(request: NextRequest) {
         const status = json.status
         const reference = json.reference
 
-        await prisma.transaction.update({
-            where: {
-                reference
-            },
-            data: {
-                status
-            }
-        })
+        // await prisma.transaction.update({
+        //     where: {
+        //         reference
+        //     },
+        //     data: {
+        //         status
+        //     }
+        // })
 
         return NextResponse.json({
             status: 200,

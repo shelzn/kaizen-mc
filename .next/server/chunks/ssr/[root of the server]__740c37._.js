@@ -102,7 +102,8 @@ function SiteFooter() {
                                         width: 280,
                                         height: 80,
                                         className: "rounded",
-                                        draggable: false
+                                        draggable: false,
+                                        loading: "lazy"
                                     }, void 0, false, {
                                         fileName: "[project]/components/site-footer.tsx",
                                         lineNumber: 12,

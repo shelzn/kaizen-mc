@@ -33,7 +33,7 @@ export function SiteHeader() {
             <header className="flex h-14 w-full max-w-[1200px] items-center justify-between rounded-2xl border border-gray-800 bg-gray-900/80 backdrop-blur-sm px-4">
                 {/* Logo and Brand - Always visible */}
                 <Link href="/" className="flex items-center gap-3">
-                    <Image src="/logo.webp" alt="Kaizen Network" width={190} height={50} className="rounded" draggable={false} />
+                    <Image src="/logo.webp" alt="Kaizen Network" width={190} height={50} className="rounded" draggable={false} loading="lazy" />
                 </Link>
 
                 {/* Desktop Navigation - Hidden on mobile */}

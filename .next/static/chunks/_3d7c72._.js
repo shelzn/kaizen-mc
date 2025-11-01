@@ -184,7 +184,8 @@ function Store() {
                                             src: point.image || "/placeholder.svg",
                                             alt: `${point.amount} Premium Points`,
                                             fill: true,
-                                            className: "object-cover"
+                                            className: "object-cover",
+                                            loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/app/store/page.tsx",
                                             lineNumber: 31,

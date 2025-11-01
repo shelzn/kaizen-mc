@@ -12,23 +12,25 @@ import {
     SelectTrigger,
     SelectValue
 } from "@/components/ui/select"
-import {ChevronLeft} from "lucide-react"
+import {ChevronLeft, Loader2} from "lucide-react"
 import {points} from "@/lib/product-list";
 import {paymentMethods} from "@/lib/payment-list";
 import React, {useState} from "react";
 import {Card, CardContent, CardHeader, CardTitle} from "@/components/ui/card";
 import { useRouter } from "next/navigation"
 import Link from "next/link"
+import {Turnstile} from "@marsidev/react-turnstile";
 
 interface PurchasePageProps {
     params: Promise<{ id: string }>;
 }
 
 export default function PurchasePage({params}: PurchasePageProps) {
-    const [username, setUsername] = useState("");
+    const [username, setUsername] = useState<string>("");
     const [payment, setPayment] = useState<string | null>(null);
-    const [isBedrock, setBedrockPlayer] = useState(false);
-    const [isLoading, setLoading] = useState(false);
+    const [isBedrock, setBedrockPlayer] = useState<boolean>(false);
+    const [isLoading, setLoading] = useState<boolean>(false);
+    const [isTurnstileVerified, setTurnstileVerified] = useState<boolean>(false);
     const search = React.use(params)
     const product = points.find((item) => item.id === search.id)
     const price = product?.amount ? product?.amount * 1000 : 0
@@ -169,33 +171,33 @@ export default function PurchasePage({params}: PurchasePageProps) {
                             </SelectTrigger>
                             <SelectContent className="bg-gray-800 border-gray-700 w-[calc(100vw-2rem)] md:w-[500px]">
                                 <SelectGroup>
-                                    <SelectLabel className="font-semibold italic">E-wallets</SelectLabel>
+                                    <SelectLabel className="font-bold">E-wallets</SelectLabel>
                                     {paymentMethods.ewallets.map((method) => (
                                         <SelectItem key={method.id} value={method.id} className="hover:bg-gray-700">
                                             <div className="flex items-center gap-3 ml-2">
-                                                <span>{method.name}</span>
+                                                <span>{method.name} - {method.description}</span>
                                             </div>
                                         </SelectItem>
                                     ))}
                                 </SelectGroup>
 
                                 <SelectGroup>
-                                    <SelectLabel className="font-semibold italic">Virtual Accounts</SelectLabel>
+                                    <SelectLabel className="font-bold">Virtual Accounts</SelectLabel>
                                     {paymentMethods.virtualAccounts.map((method) => (
                                         <SelectItem key={method.id} value={method.id} className="hover:bg-gray-700">
                                             <div className="flex items-center gap-3 ml-2">
-                                                <span>{method.name}</span>
+                                                <span>{method.name} - {method.description}</span>
                                             </div>
                                         </SelectItem>
                                     ))}
                                 </SelectGroup>
 
                                 <SelectGroup>
-                                    <SelectLabel className="font-semibold italic">Retail Stores</SelectLabel>
+                                    <SelectLabel className="font-bold">Retail Stores</SelectLabel>
                                     {paymentMethods.retailStores.map((method) => (
                                         <SelectItem key={method.id} value={method.id} className="hover:bg-gray-700">
                                             <div className="flex items-center gap-3 ml-2">
-                                                <span>{method.name}</span>
+                                                <span>{method.name} - {method.description}</span>
                                             </div>
                                         </SelectItem>
                                     ))}
@@ -204,13 +206,23 @@ export default function PurchasePage({params}: PurchasePageProps) {
                         </Select>
 
                     </div>
+                    
+                    <Turnstile
+                        siteKey="3x00000000000000000000FF" // NOTE: DEMO ONLY!!
+                        onSuccess={() => setTurnstileVerified(true)}
+                        />
 
                     <Button
                         className="w-full bg-yellow-400 hover:bg-yellow-500 text-black h-12 text-lg rounded-xl"
-                        disabled={isLoading || isButtonDisabled}
+                        disabled={isLoading || isButtonDisabled || !isTurnstileVerified}
                         onClick={() => handlePaymentProcess()}
                     >
-                        {isLoading ? "Processing..." : "Bayar"}
+                        {isLoading ? (
+                            <>
+                                <Loader2 className="w-8 h-8 animate-spin text-black"/>
+                                <p>Memproses...</p>
+                            </>
+                        ): "Bayar"}
                     </Button>
                 </CardContent>
             </Card>

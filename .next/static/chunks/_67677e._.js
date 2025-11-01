@@ -82,35 +82,42 @@ const paymentMethods = {
     ewallets: [
         {
             id: "QRISC",
-            name: "QRIS"
+            name: "QRIS",
+            description: "Bayar dengan GoPay, OVO, Dana, dan lain-lain"
         }
     ],
     virtualAccounts: [
         {
             id: "BRIVA",
-            name: "BRI Virtual Account"
+            name: "BRI Virtual Account",
+            description: "Transfer dari Bank BRI"
         },
         {
             id: "BNIVA",
-            name: "BNI Virtual Account"
+            name: "BNI Virtual Account",
+            description: "Transfer dari Bank BNI"
         },
         {
             id: "MANDIRIVA",
-            name: "Mandiri Virtual Account"
+            name: "Mandiri Virtual Account",
+            description: "Transfer dari Bank Mandiri"
         },
         {
             id: "BCAVA",
-            name: "BCA Virtual Account"
+            name: "BCA Virtual Account",
+            description: "Transfer dari Bank BCA"
         }
     ],
     retailStores: [
         {
             id: "ALFAMART",
-            name: "Alfamart"
+            name: "Alfamart",
+            description: "Bayar di gerai Alfamart"
         },
         {
             id: "INDOMARET",
-            name: "Indomaret"
+            name: "Indomaret",
+            description: "Bayar di gerai Indomaret"
         }
     ]
 };
@@ -641,7 +648,8 @@ function SiteHeader() {
                         width: 190,
                         height: 50,
                         className: "rounded",
-                        draggable: false
+                        draggable: false,
+                        loading: "lazy"
                     }, void 0, false, {
                         fileName: "[project]/components/site-header.tsx",
                         lineNumber: 36,

@@ -129,7 +129,8 @@ function GamemodeSection() {
                                             alt: `${gamemode.title} Screenshot`,
                                             fill: true,
                                             className: "object-cover",
-                                            draggable: false
+                                            draggable: false,
+                                            loading: "lazy"
                                         }, void 0, false, {
                                             fileName: "[project]/components/gamemode-section.tsx",
                                             lineNumber: 63,
@@ -642,7 +643,8 @@ function SocialSection() {
                                                     height: 40,
                                                     alt: item.title,
                                                     className: "w-10 h-10",
-                                                    draggable: false
+                                                    draggable: false,
+                                                    loading: "lazy"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/social-section.tsx",
                                                     lineNumber: 51,
@@ -658,7 +660,7 @@ function SocialSection() {
                                                 children: item.title
                                             }, void 0, false, {
                                                 fileName: "[project]/components/social-section.tsx",
-                                                lineNumber: 60,
+                                                lineNumber: 61,
                                                 columnNumber: 37
                                             }, this)
                                         ]
@@ -680,7 +682,7 @@ function SocialSection() {
                                             children: item.description
                                         }, void 0, false, {
                                             fileName: "[project]/components/social-section.tsx",
-                                            lineNumber: 65,
+                                            lineNumber: 66,
                                             columnNumber: 33
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -693,18 +695,18 @@ function SocialSection() {
                                                 children: item.buttonText
                                             }, void 0, false, {
                                                 fileName: "[project]/components/social-section.tsx",
-                                                lineNumber: 70,
+                                                lineNumber: 71,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/social-section.tsx",
-                                            lineNumber: 66,
+                                            lineNumber: 67,
                                             columnNumber: 33
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/social-section.tsx",
-                                    lineNumber: 64,
+                                    lineNumber: 65,
                                     columnNumber: 29
                                 }, this)
                             ]

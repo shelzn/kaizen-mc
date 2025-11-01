@@ -66,6 +66,7 @@ export function GamemodeSection() {
                                         fill
                                         className="object-cover"
                                         draggable={false}
+                                        loading="lazy"
                                     />
                                 </div>
                             </div>

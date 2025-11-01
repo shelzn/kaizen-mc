@@ -9,7 +9,7 @@ export function SiteFooter() {
                     {/* Left Column - Logo and Social */}
                     <div className="flex flex-col items-center md:items-start">
                         <div className="flex items-center gap-3 mb-8">
-                            <Image src="/logo.webp" alt="Kaizen Network" width={280} height={80} className="rounded" draggable={false} />
+                            <Image src="/logo.webp" alt="Kaizen Network" width={280} height={80} className="rounded" draggable={false} loading="lazy" />
                         </div>
 
                         <div className="flex gap-6">

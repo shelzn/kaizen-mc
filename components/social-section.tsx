@@ -55,6 +55,7 @@ export default function SocialSection() {
                                             alt={item.title}
                                             className="w-10 h-10"
                                             draggable={false}
+                                            loading="lazy"
                                         />
                                     </div>
                                     <CardTitle
